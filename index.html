@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freight Broker Masterclass: Get Direct Shippers Fast With Proven Broker Systems. Build a profitable freight business from scratch.">
+    <title>Freight Broker Masterclass | Go Direct, Get Shippers Fast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+        }
+        
+        .cta-button:active {
+            transform: translateY(0);
+        }
+        
+        .pulse-badge {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+        
+        .countdown-timer {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .accordion-button {
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-button.active {
+            background-color: rgba(0, 212, 255, 0.1);
+            border-color: #00d4ff;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-content.active {
+            max-height: 500px;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(0, 153, 255, 0.05) 100%);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: rgba(0, 212, 255, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            border-color: rgba(0, 212, 255, 0.5);
+            transform: translateY(-4px);
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+        
+        .scroll-animation {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(40px);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+    
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-4 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="hero-glow top-20 -left-32"></div>
+            <div class="hero-glow bottom-20 -right-32"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="space-y-8">
+                    <!-- Urgency Badge -->
+                    <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-800 to-slate-900 border border-cyan-500/30 rounded-full px-4 py-2 w-fit pulse-badge">
+                        <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                        <span class="text-xs font-semibold text-cyan-300">Limited Spots Available - Only 12 Seats Left</span>
+                    </div>
+                    
+                    <!-- Main Headline -->
+                    <div class="space-y-4">
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
+                            Freight Broker <span class="gradient-text">Masterclass</span>
+                        </h1>
+                        <p class="text-2xl md:text-3xl font-bold text-cyan-300">
+                            Go Direct, Get Shippers Fast
+                        </p>
+                    </div>
+                    
+                    <!-- Hero Subheadline -->
+                    <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl">
+                        Get Direct Shippers Fast With Proven Broker Systems. Learn the exact strategies used by top freight brokers to build a profitable business from scratch in just 90 days.
+                    </p>
+                    
+                    <!-- Countdown Timer -->
+                    <div class="bg-gradient-to-r from-slate-800 to-slate-900 border border-cyan-500/30 rounded-2xl p-6 space-y-2">
+                        <p class="text-sm font-semibold text-slate-400 uppercase tracking-wider">Masterclass Starts In</p>
+                        <div class="flex gap-4 countdown-timer">
+                            <div class="text-center">
+                                <div class="text-4xl font-black text-cyan-400" id="days">15</div>
+                                <p class="text-xs text-slate-400 mt-1">Days</p>
+                            </div>
+                            <div class="text-2xl text-slate-600">:</div>
+                            <div class="text-center">
+                                <div class="text-4xl font-black text-cyan-400" id="hours">08</div>
+                                <p class="text-xs text-slate-400 mt-1">Hours</p>
+                            </div>
+                            <div class="text-2xl text-slate-600">:</div>
+                            <div class="text-center">
+                                <div class="text-4xl font-black text-cyan-400" id="minutes">42</div>
+                                <p class="text-xs text-slate-400 mt-1">Minutes</p>
+                            </div>
+                            <div class="text-2xl text-slate-600">:</div>
+                            <div class="text-center">
+                                <div class="text-4xl font-black text-cyan-400" id="seconds">17</div>
+                                <p class="text-xs text-slate-400 mt-1">Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="https://calendly.com/dandowneyseo/30min" class="cta-button text-white font-bold py-4 px-8 rounded-xl text-lg hover:shadow-2xl transition-all duration-300 text-center inline-block">
+                            Reserve Your Spot Now
+                        </a>
+                        <button class="border-2 border-cyan-400 text-cyan-300 font-bold py-4 px-8 rounded-xl text-lg hover:bg-cyan-400/10 transition-all duration-300">
+                            Watch Free Preview
+                        </button>
+                    </div>
+                    
+                    <!-- Social Proof Mini -->
+                    <div class="flex items-center space-x-4 pt-4">
+                        <div class="flex -space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 border-2 border-slate-950 flex items-center justify-center text-xs font-bold">JM</div>
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 border-2 border-slate-950 flex items-center justify-center text-xs font-bold">SB</div>
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 border-2 border-slate-950 flex items-center justify-center text-xs font-bold">RC</div>
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-100">1,247+ Brokers Enrolled</p>
+                            <p class="text-xs text-slate-400">⭐⭐⭐⭐⭐ 4.9/5 Rating</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Video Section -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-3xl blur-2xl"></div>
+                    <div class="relative bg-slate-900 rounded-3xl overflow-hidden border border-cyan-500/30 shadow-2xl">
+                        <div class="video-container bg-black">
+                            <iframe 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                class="rounded-2xl"
+                            ></iframe>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 bg-gradient-to-r from-slate-900 to-transparent p-4 rounded-lg">
+                            <p class="text-sm font-semibold text-cyan-300">▶ Watch Intro Video (3:42)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Section -->
+    <section class="py-16 px-4 bg-gradient-to-b from-slate-950 to-slate-900 border-t border-cyan-500/10">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-center text-slate-400 text-sm font-semibold uppercase tracking-wider mb-12">Trusted By Industry Leaders</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+                <div class="text-slate-500 font-bold text-lg hover:text-cyan-400 transition-colors">Trucking Today</div>
+                <div class="text-slate-500 font-bold text-lg hover:text-cyan-400 transition-colors">Freight News</div>
+                <div class="text-slate-500 font-bold text-lg hover:text-cyan-400 transition-colors">Transport Dive</div>
+                <div class="text-slate-500 font-bold text-lg hover:text-cyan-400 transition-colors">Logistics Journal</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="py-24 px-4 bg-slate-950 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-1/2 left-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4">
+                    What You'll Learn
+                </h2>
+                <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                    Master the proven systems that top freight brokers use to scale their businesses
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Direct Outreach System</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Get the exact direct outreach system to get fast shipper wins. Learn how to find, contact, and convert shippers in 24 hours.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pricing & Rate Strategy</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Master the pricing psychology that wins contracts. Learn how to quote competitively while maximizing your margins.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Carrier Network Building</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Build a reliable carrier network that delivers results. Learn the vetting process and relationship management secrets.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Business Growth Analytics</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Track metrics that matter. Learn which KPIs to monitor and how to scale from $50K to $500K in revenue.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5-4a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Technology & Tools</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Master the software stack that saves time and scales operations. From TMS to CRM automation secrets.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="w-14 h-14 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Legal & Compliance</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Stay compliant and avoid costly mistakes. Learn licensing, insurance, and regulatory requirements simplified.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section class="py-24 px-4 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-1/3 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Benefits List -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-black mb-4">
+                            Build Your Profitable Freight Business From Scratch
+                        </h2>
+                        <p class="text-xl text-slate-400">
+                            Everything you need to go from zero to six-figure freight broker in 90 days
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- Benefit 1 -->
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-2">Get Your First Shipper in 24 Hours</h3>
+                                <p class="text-slate-400">Follow the exact playbook used by successful brokers to land your first shipper and prove the concept works</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 2 -->
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-2">Scale to $50K/Month Revenue</h3>
+                                <p class="text-slate-400">Learn the growth framework that scales from zero to consistent six-figure annual revenue without hiring</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 3 -->
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-2">Avoid $50K+ in Costly Mistakes</h3>
+                                <p class="text-slate-400">Learn from others' failures and bypass the expensive lessons that cost most new brokers their first year profits</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 4 -->
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-2">Lifetime Access to Resources</h3>
+                                <p class="text-slate-400">Get templates, scripts, checklists, and tools you can use forever to run your growing freight brokerage</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Benefit 5 -->
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-2">Private Community Access</h3>
+                                <p class="text-slate-400">Connect with other brokers, share wins, ask questions, and collaborate in our exclusive member community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Visual -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-3xl blur-2xl"></div>
+                    <div class="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-cyan-500/30">
+                        <div class="space-y-6">
+                            <div class="bg-slate-950/50 rounded-xl p-6 border border-cyan-500/20">
+                                <p class="text-sm text-slate-400 mb-2">Average Student Results</p>
+                                <p class="text-3xl font-black text-cyan-400">$47,250</p>
+                                <p class="text-sm text-slate-400 mt-2">First Month Revenue</p>
+                            </div>
+                            <div class="bg-slate-950/50 rounded-xl p-6 border border-cyan-500/20">
+                                <p class="text-sm text-slate-400 mb-2">90-Day Target</p>
+                                <p class="text-3xl font-black text-cyan-400">$150K+</p>
+                                <p class="text-sm text-slate-400 mt-2">Cumulative Revenue</p>
+                            </div>
+                            <div class="bg-slate-950/50 rounded-xl p-6 border border-cyan-500/20">
+                                <p class="text-sm text-slate-400 mb-2">Success Rate</p>
+                                <p class="text-3xl font-black text-cyan-400">87%</p>
+                                <p class="text-sm text-slate-400 mt-2">Students Reach $50K+</p>
+                            </div>
+                            <div class="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-xl p-6 border border-cyan-500/30">
+                                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold mb-2">Based on 1,247 Student Results</p>
+                                <p class="text-sm text-cyan-300">Results may vary. Individual success depends on effort, market conditions, and implementation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="py-24 px-4 bg-slate-950 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4">
+                    Trusted By Successful Brokers
+                </h2>
+                <p class="text-xl text-slate-400">
+                    See what students are saying about the Freight Broker Masterclass
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-white font-bold text-lg">JM</div>
+                        <div>
+                            <p class="font-bold text-slate-100">James Martinez</p>
+                            <p class="text-sm text-slate-400">Texas Freight Broker</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">
+                        "This masterclass literally changed my life. I went from $0 to $87K in my first 90 days. The direct outreach system works exactly as Dan promised. Highly recommend!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-white font-bold text-lg">SB</div>
+                        <div>
+                            <p class="font-bold text-slate-100">Sarah Bennett</p>
+                            <p class="text-sm text-slate-400">California Transport</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">
+                        "I was skeptical at first, but the framework is solid. The pricing strategy section alone saved me thousands. Now I'm consistently hitting $60K+ per month."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white font-bold text-lg">RC</div>
+                        <div>
+                            <p class="font-bold text-slate-100">Robert Chen</p>
+                            <p class="text-sm text-slate-400">Midwest Freight Solutions</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">
+                        "The community is incredible. I've made connections that turned into partnerships. The masterclass pays for itself in the first week. Best investment ever!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center text-white font-bold text-lg">MK</div>
+                        <div>
+                            <p class="font-bold text-slate-100">Michael King</p>
+                            <p class="text-sm text-slate-400">Florida Logistics</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">
+                        "Dan knows exactly what he's talking about. The compliance section alone saved me from making costly mistakes. Worth every penny!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white font-bold text-lg">LS</div>
+                        <div>
+                            <p class="font-bold text-slate-100">Lisa Santos</p>
+                            <p class="text-sm text-slate-400">Georgia Freight Hub</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">
+                        "I've been in freight for 10 years and I learned more in this masterclass than I did in my entire career. Game changer!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card p-8 rounded-2xl">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-14 h-14 rounded-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center text-white font-bold text-lg">NP</div>
+                        <div>
+                            <p class="font-bold text-slate-100">Nicole Parker</p>
+                            <p class="text-sm text-slate-400">Pennsylvania Transport</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4">
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                        <span class="text-yellow-400">⭐</span>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed">
+                        "The templates and scripts saved me so much time. I went from struggling to getting 5+ shipper inquiries per day. Incredible!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section Before FAQ -->
+    <section class="py-20 px-4 bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-0 left-1/3 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/3 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                Ready to Build Your Freight Empire?
+            </h2>
+            <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+                Join 1,247+ successful brokers who are already making $50K+ per month. Limited spots available for this cohort.
+            </p>
+            <a href="https://calendly.com/dandowneyseo/30min" class="cta-button text-white font-bold py-4 px-10 rounded-xl text-lg inline-block mb-4">
+                Claim Your Spot Now
+            </a>
+            <p class="text-sm text-slate-400 mt-4">
+                ✓ Lifetime Access • ✓ Money-Back Guarantee • ✓ Private Community
+            </p>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-24 px-4 bg-slate-950 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute bottom-1/3 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-slate-400">
+                    Everything you need to know about the Freight Broker Masterclass
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border border-cyan-500/20 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-6 flex items-center justify-between hover:bg-slate-700/50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-bold">Do I need any prior freight experience?</span>
+                        <svg class="w-6 h-6 text-cyan-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content bg-slate-900/50 border-t border-cyan-500/10">
+                        <p class="p-6 text-slate-300 leading-relaxed">
+                            No! The masterclass is designed for complete beginners. We start from scratch and teach you everything you need to know. Many of our most successful students had zero freight experience before joining.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border border-cyan-500/20 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-6 flex items-center justify-between hover:bg-slate-700/50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-bold">How long does it take to get my first shipper?</span>
+                        <svg class="w-6 h-6 text-cyan-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content bg-slate-900/50 border-t border-cyan-500/10">
+                        <p class="p-6 text-slate-300 leading-relaxed">
+                            Most students get their first shipper within 24-48 hours of implementing the direct outreach system. The framework is designed for speed and immediate results. Some students have signed shippers on the same day they start.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border border-cyan-500/20 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-6 flex items-center justify-between hover:bg-slate-700/50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-bold">What if I don't reach the promised results?</span>
+                        <svg class="w-6 h-6 text-cyan-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content bg-slate-900/50 border-t border-cyan-500/10">
+                        <p class="p-6 text-slate-300 leading-relaxed">
+                            We offer a 60-day money-back guarantee. If you complete all the modules and don't see results, we'll refund your investment. No questions asked. We're confident in the material because we've seen it work for thousands of brokers.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border border-cyan-500/20 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-6 flex items-center justify-between hover:bg-slate-700/50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-bold">How much does it cost to get started in freight brokerage?</span>
+                        <svg class="w-6 h-6 text-cyan-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content bg-slate-900/50 border-t border-cyan-500/10">
+                        <p class="p-6 text-slate-300 leading-relaxed">
+                            The masterclass covers everything including licensing, bonding, and startup costs. Most brokers can get started with $3,000-$5,000 total investment. We show you how to bootstrap without massive capital and when to reinvest profits for growth.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border border-cyan-500/20 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-6 flex items-center justify-between hover:bg-slate-700/50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-bold">Is this a one-time course or ongoing training?</span>
+                        <svg class="w-6 h-6 text-cyan-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content bg-slate-900/50 border-t border-cyan-500/10">
+                        <p class="p-6 text-slate-300 leading-relaxed">
+                            You get lifetime access to all course materials, plus access to our private community for ongoing support. We also release monthly training updates and case studies so you're always learning from the latest market trends.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border border-cyan-500/20 overflow-hidden">
+                    <button class="accordion-button w-full text-left p-6 flex items-center justify-between hover:bg-slate-700/50 transition-colors" onclick="toggleAccordion(this)">
+                        <span class="text-lg font-bold">Can I get a refund if I change my mind?</span>
+                        <svg class="w-6 h-6 text-cyan-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="accordion-content bg-slate-900/50 border-t border-cyan-500/10">
+                        <p class="p-6 text-slate-300 leading-relaxed">
+                            Yes! We offer a 60-day money-back guarantee. If you're not satisfied for any reason, just let us know and we'll process a full refund. We want you to feel confident in your investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Help -->
+            <div class="mt-16 bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border border-cyan-500/30 p-8 text-center">
+                <h3 class="text-2xl font-bold mb-3">Still Have Questions?</h3>
+                <p class="text-slate-400 mb-6">
+                    Schedule a 1-on-1 consultation call with our team. We'll answer all your questions and help you determine if the masterclass is right for you.
+                </p>
+                <a href="https://calendly.com/dandowneyseo/30min" class="cta-button text-white font-bold py-3 px-8 rounded-lg inline-block">
+                    Schedule Your Free Call
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA Section -->
+    <section class="py-20 px-4 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-transparent to-blue-500/10"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-slate-800 to-slate-900 border border-cyan-500/30 rounded-full px-4 py-2 mb-6 pulse-badge">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                <span class="text-xs font-semibold text-cyan-300">⏰ Only 12 Spots Remaining for This Cohort</span>
+            </div>
+            
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                Don't Leave Money on the Table
+            </h2>
+            <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+                Every day you wait is money you're not making. The average student makes back their investment in the first week. Secure your spot in the Freight Broker Masterclass today.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="https://calendly.com/dandowneyseo/30min" class="cta-button text-white font-bold py-4 px-10 rounded-xl text-lg inline-block">
+                    Reserve Your Spot Now
+                </a>
+            </div>
+            
+            <p class="text-sm text-slate-400 space-y-2">
+                <div>✓ 60-Day Money-Back Guarantee</div>
+                <div>✓ Lifetime Access to All Materials</div>
+                <div>✓ Private Community Support</div>
+            </p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-cyan-500/10 py-8 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-8">
+                <!-- Logo/Brand -->
+                <div>
+                    <h3 class="text-2xl font-black bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                        Freight Broker Masterclass
+                    </h3>
+                </div>
+                
+                <!-- Contact -->
+                <div class="text-center">
+                    <p class="text-slate-400 mb-2">Questions? Contact us:</p>
+                    <a href="mailto:backroadstrucking@gmail.com" class="text-cyan-400 hover:text-cyan-300 transition-colors font-semibold">
+                        backroadstrucking@gmail.com
+                    </a>
+                </div>
+                
+                <!-- CTA -->
+                <div class="text-right">
+                    <a href="https://calendly.com/dandowneyseo/30min" class="cta-button text-white font-bold py-3 px-6 rounded-lg inline-block">
+                        Register Now
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-slate-800 pt-8">
+                <p class="text-center text-slate-500 text-sm">
+                    © 2024 Freight Broker Masterclass. All rights reserved. | 
+                    <span class="text-slate-600">Backroads Trucking</span>
+                </p>
+                <p class="text-center text-slate-600 text-xs mt-3">
+                    Results may vary. Individual success depends on effort, market conditions, and implementation of the strategies taught in this course.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const launchDate = new Date(now + 15 * 24 * 60 * 60 * 1000 + 8 * 60 * 60 * 1000 + 42 * 60 * 1000 + 17 * 1000).getTime();
+            
+            const interval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = launchDate - now;
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+                
+                if (distance < 0) {
+                    clearInterval(interval);
+                    document.getElementById('days').textContent = '00';
+                    document.getElementById('hours').textContent = '00';
+                    document.getElementById('minutes').textContent = '00';
+                    document.getElementById('seconds').textContent = '00';
+                }
+            }, 1000);
+        }
+        
+        // Accordion Toggle
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            
+            // Close other accordions
+            document.querySelectorAll('.accordion-button').forEach(btn => {
+                if (btn !== button) {
+                    btn.classList.remove('active');
+                    btn.nextElementSibling.classList.remove('active');
+                    btn.querySelector('svg').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current accordion
+            button.classList.toggle('active');
+            content.classList.toggle('active');
+            icon.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+            icon.style.transition = 'transform 0.3s ease';
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCountdown();
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
